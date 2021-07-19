@@ -42,8 +42,9 @@ export class FormularioComponent implements OnInit {
         this.contactoService.crearMensaje(this.miFormulario.value).subscribe(
           resp=> {
             if(resp){
-              this.mensaje= this.miFormulario.value;
+              
               Swal.fire(`Gracias ${nombre}!`,`Tu mensaje ha sido enviado!`, 'success' );
+
               
             }
           }
@@ -51,7 +52,7 @@ export class FormularioComponent implements OnInit {
 
       }
 
-      
+      this.miFormulario.reset();
 
 
   }
