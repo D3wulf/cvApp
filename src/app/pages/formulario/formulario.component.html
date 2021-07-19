@@ -1,0 +1,16 @@
+<form [formGroup]="miFormulario" (ngSubmit)="enviar()">
+    <div class="fields">
+        <div class="field half">
+            <input formControlName="nombre" type="text" name="nombre" placeholder="Nombre" />
+        </div>
+        <div class="field half">
+            <input type="email" formControlName="email" name="email" placeholder="Email" />
+        </div>
+        <div class="field">
+            <textarea name="mensaje" formControlName="mensaje" placeholder="Mensaje" rows="7"></textarea>
+        </div>
+    </div>
+    <ul class="actions">
+        <li><button [disabled]="miFormulario.invalid" type="submit" class="button primary">Enviar</button></li>
+    </ul>
+</form>
