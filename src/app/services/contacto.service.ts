@@ -15,7 +15,7 @@ export class ContactoService {
 
   //Para la pagina usuarios// para paginacion, ver usuario service
   cargarMensajes(){
-    const miUrl = `${url}/Mensajes`;
+    const miUrl = `${url}/mensajes`;
     return this.http.get<any>(miUrl)
     .pipe(
       map( (resp: { 
@@ -30,7 +30,7 @@ export class ContactoService {
 
 
     //Recordar post ( url, datos, headers)
-    const miUrl = `${url}/Mensajes`;
+    const miUrl = `${url}/mensajes`;
     return this.http.post(miUrl,datos);
     
    }
@@ -39,7 +39,7 @@ export class ContactoService {
 
 
     //Recordar post ( url, datos, headers)
-    const miUrl = `${url}/Mensajes/${id}`;
+    const miUrl = `${url}/mensajes/${id}`;
     return this.http.delete(miUrl);
     
    }
