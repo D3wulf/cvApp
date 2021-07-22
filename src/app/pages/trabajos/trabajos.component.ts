@@ -13,6 +13,11 @@ export class TrabajosComponent implements OnInit {
 
   misTrabajos:Trabajo[]=[
     {
+      nombre:'CodeInc',
+      descripcion:'Aplicación de empresa ficticia con MEAN',
+      url:'https://codein-backend.herokuapp.com/dashboard'
+    },
+    {
       nombre:'MEAN',
       descripcion:'Api en contrucción con MEAN',
       url:'https://angular-auth-masm.herokuapp.com/auth/login'
