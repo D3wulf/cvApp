@@ -478,6 +478,8 @@ hr.major {
 
 .row.aln-middle {
     align-items: center;
+    left: 110;
+    position: relative;
 }
 
 .row.aln-bottom {
@@ -713,6 +715,8 @@ hr.major {
     }
     .row.aln-middle {
         align-items: center;
+        left: 110px;
+        position: relative;
     }
     .row.aln-bottom {
         align-items: flex-end;
@@ -2345,7 +2349,7 @@ input[type="radio"]+label:before {
 }
 
 .image.main img {
-    width: 100%;
+    width: 60%;
 }
 
 .image.main:first-child {
@@ -2389,6 +2393,10 @@ ul {
 
 ul li {
     padding-left: 0.325rem;
+}
+
+ul li h5 {
+    color: white;
 }
 
 ul.alt {

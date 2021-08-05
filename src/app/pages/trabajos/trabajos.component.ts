@@ -24,7 +24,7 @@ export class TrabajosComponent implements OnInit {
     },
     {
       nombre:'Proyecto del curso de Cenec',
-      descripcion:'SPA de con Angular y llamadas a XML y Json',
+      descripcion:'SPA con Angular y llamadas a XML y Json',
       url:'https://cmv-proyecto.dreamhosters.com/'
     },
     {

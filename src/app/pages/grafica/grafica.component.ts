@@ -22,11 +22,11 @@ export class GraficaComponent {
 
   //@Input('labels1') labels1:string[]= [];
   @Input('data1') barChartData: ChartDataSets[] = [
-    { data: [3,7,9], label: 'Angular', backgroundColor: '#02A9FA' },
-    { data: [4,6,8], label: 'NodeJs' , backgroundColor: '#000000' },
-    { data: [0,3,0], label: 'ReactJs', backgroundColor: '#df7116' },
-    { data: [0,0,0], label: 'VueJs', backgroundColor: '#E8CE5A' },
-    { data: [7,5,5], label: 'Otros(HTML,CSS,Java)', backgroundColor: '#DF1DF6' },
+    { data: [3,7,9,7], label: 'Angular', backgroundColor: '#02A9FA' },
+    { data: [4,6,8,4], label: 'NodeJs' , backgroundColor: '#000000' },
+    { data: [0,3,0,0], label: 'ReactJs', backgroundColor: '#df7116' },
+    { data: [0,0,0,1], label: 'VueJs', backgroundColor: '#E8CE5A' },
+    { data: [7,5,5,7], label: 'Otros(HTML,CSS,JavaScipt)', backgroundColor: '#DF1DF6' },
     
     
   ];

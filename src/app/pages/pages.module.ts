@@ -6,17 +6,36 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TrabajosComponent } from './trabajos/trabajos.component';
 import { GraficaComponent } from './grafica/grafica.component';
 import { TemasComponent } from './temas/temas.component';
+import { FlipboxComponent } from './flipbox/flipbox.component';
+import { JunioComponent } from './junio/junio.component';
+import { JulioComponent } from './julio/julio.component';
+import { AgostoComponent } from './agosto/agosto.component';
+
 
 
 
 @NgModule({
-  declarations: [FormularioComponent, TrabajosComponent, GraficaComponent, TemasComponent],
+  declarations: [
+    FormularioComponent, 
+    TrabajosComponent, 
+    GraficaComponent, 
+    TemasComponent, 
+    FlipboxComponent, JunioComponent, JulioComponent, AgostoComponent],
   imports: [
     CommonModule, 
     FormsModule,
     ReactiveFormsModule,
-    ChartsModule
+    ChartsModule,
   ],
-  exports:[FormularioComponent,TrabajosComponent,GraficaComponent, TemasComponent]
+  exports:[
+    FormularioComponent,
+    TrabajosComponent,
+    GraficaComponent, 
+    TemasComponent,
+    FlipboxComponent,
+    JunioComponent,
+    JulioComponent,
+    AgostoComponent
+  ]
 })
 export class PagesModule { }

@@ -4,10 +4,10 @@
     <!-- Intro -->
     <section class="intro">
         <header>
-            <h1>Miguel Ángel Sánchez Miranda</h1>
-            <p>Curriculum Portfolio </p>
+            <h1 class="animate__animated animate__flipInX">Miguel Ángel Sánchez Miranda</h1>
+            <p class="animate__animated animate__fadeInLeftBig">Curriculum Portfolio </p>
             <ul class="actions">
-                <li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
+                <li><a href="#first" class="arrow scrolly animate__animated animate__fadeInDown animate__repeat-3"><span class="label">Next</span></a></li>
             </ul>
         </header>
         <div class="content">
@@ -22,10 +22,12 @@
         </header>
         <div class="content">
 
-            <app-temas></app-temas><br/> <br>
-            <p>Mi nombre es Miguel Angel y soy <strong>programador full stack junior</strong>. El motivo de crear esta web es para tener un sitio donde poder presentarme, un pequeño Portfolio, un Curriculum siempre actualizado... Un poco de todo.La web esta
+
+            <p>Mi nombre es Miguel Angel y soy <strong>programador full stack junior</strong>. El motivo de crear esta web es para tener un sitio donde poder presentarme, un pequeño Portfolio, un Currículum siempre actualizado... Un poco de todo.La web esta
                 hecha con <strong>Angular</strong></p>
-            <span class="image main fit"><img src="./assets/images/h2.jpg" alt="imagen del autor" /></span>
+            <div class="row aln-middle">
+                <span class="image main fit"><img src="./assets/images/h2.jpg" alt="imagen del autor" /></span>
+            </div>
         </div>
     </section>
 
@@ -40,10 +42,10 @@
             <p>En todo este tiempo, a parte de trabajar en otro sector ( las facturas no se pagaban solas ), hice varios cursos por mi cuenta. Estos son mis conocimientos:</p>
             <ul class="feature-icons">
                 <li class="icon solid fa-laptop">Angular y Angular avanzado</li>
-                <li class="icon solid fa-bolt">Javascript, NodeJs(Express)</li>
-                <li class="icon solid fa-signal">PHP y Laravel</li>
-                <li class="icon solid fa-cog">HTML5, CSS, Jquery</li>
-                <li class="icon solid fa-map-marker-alt">VueJs,ReactJs</li>
+                <li class="icon solid fa-code">Javascript, NodeJs(Express)</li>
+                <li class="icon solid fa-code">PHP y Laravel</li>
+                <li class="icon solid fa-code">HTML5, CSS, Jquery</li>
+                <li class="icon solid fa-code">VueJs,ReactJs</li>
                 <li class="icon solid fa-code">Java y C#</li>
             </ul>
             <p>También he usado Bases de datos MySql, Firebase, MongoDB. Uso también <strong><a href="https://github.com/D3wulf?tab=repositories">GIT</a></strong></p>
@@ -67,11 +69,13 @@
                         <li>Curso de PHP y Laravel</li>
                         <li>Javascript</li>
                         <li>C#</li>
+                        <li>Git</li>
                     </ul>
                 </header>
                 <div class="content">
-                    <div class="gallery">
-                        <a href="./assets/images/7.jpg"><img src="./assets/images/7.jpg" alt="curso de Javascript" /></a>
+
+                    <app-flipbox></app-flipbox>
+                    <!-- <a href="./assets/images/7.jpg"><img src="./assets/images/7.jpg" alt="curso de Javascript" /></a>
                         <a href="./assets/images/3.png">
                             <img src="./assets/images/3.png" alt="curso cenec" /></a>
                         <a href="./assets/images/8.jpg">
@@ -81,8 +85,8 @@
                         <a href="../assets/images/forinemasPHP.png">
                             <img src="../assets/images/forinemasPHP.png" alt="Curso PHP forinemas" /></a>
                         <a href="../assets/images/">
-                            <img src="../assets/images/forinemasJquery.png" alt="Curso Jquery forinemas" /></a>
-                    </div>
+                            <img src="../assets/images/forinemasJquery.png" alt="Curso Jquery forinemas" /></a> -->
+
                 </div>
             </section>
 
@@ -98,11 +102,53 @@
                     <div class="col-12">
                         <app-grafica></app-grafica>
                     </div>
-                    <div>
-                        <a href="../assets/images/2.jpg" class="landscape image fit"><img src="../assets/images/2.jpg" alt="" /></a>
 
+
+                </div>
+            </section>
+
+            <section>
+                <header>
+                    <h3>Novedades/Blog</h3>
+                    <p>En este apartado explico en lo que estoy trabajando en mi tiempo, ya sea algún curso, una nueva aplicación, algún código que quiero reforzar... </p>
+                </header>
+
+                <div class="content">
+
+                    <h4>Novedades</h4>
+                    <div class="table-wrapper">
+                        <table class="alt">
+
+                            <tbody>
+                                <tr>
+                                    <td>Junio</td>
+                                    <td>Angular, NodeJs, ReactJs</td>
+                                    <td><a routerLink="junio" routerLinkActive="activo" class="button primary">Ver</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Julio</td>
+                                    <td>MEAN</td>
+                                    <td><a routerLink="julio" routerLinkActive="activo" class="button primary">Ver</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Agosto</td>
+                                    <td>Nuevos retos (Angular/Vuejs)</td>
+                                    <td><a routerLink="agosto" routerLinkActive="activo" class="button primary">Ver</a></td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
                     </div>
 
+                </div>
+
+
+
+            </section>
+            <section>
+                <div class="content">
+                    <router-outlet></router-outlet>
                 </div>
             </section>
 
@@ -140,12 +186,13 @@
         <div class="content">
             <p>Estoy en búsqueda activa de empleo, si buscas un programador <strong>junior</strong>, no dudes en escribirme! Pd: El botón está deshabilitado hasta que el formulario sea válido (anti-spam)</p>
             <app-formulario></app-formulario>
+            <app-temas></app-temas><br/>
         </div>
         <footer>
             <ul class="items">
                 <li>
                     <h3>Email</h3>
-                    <a href="#">miguelasanchez1980@gmail.com</a>
+                    <a href="mailto:miguelasanchez1980@gmail.com">miguelasanchez1980@gmail.com</a>
                 </li>
                 <li>
                     <h3>Phone</h3>
@@ -169,7 +216,8 @@
         </footer>
     </section>
 
+
     <!-- Copyright -->
-    <div class="copyright"><strong>&copy; 2021 Miguel Ángel Sánchez Miranda.</strong></div>
+    <div class="copyright"><strong>&copy;{{anyo}} Miguel Ángel Sánchez Miranda.</strong></div>
 
 </div>

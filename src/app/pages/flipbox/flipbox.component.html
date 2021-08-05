@@ -1,0 +1,19 @@
+<div class="gallery">
+
+    <div class='flip-box rounded' *ngFor="let item of misCursos">
+        <div class='flip-box-inner'>
+            <div class='flip-box-front'>
+
+
+                <img [src]="item.url" class="image fill" [alt]="item.nombre" />
+
+            </div>
+
+            <div class="flip-box-back  ">
+                <h5>{{item.descripcion}}</h5>
+            </div>
+        </div>
+    </div>
+
+
+</div>

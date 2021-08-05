@@ -18,8 +18,8 @@ export class ContactoService {
     const miUrl = `${url}/mensajes`;
     return this.http.get<any>(miUrl)
     .pipe(
-      map( (resp: { 
-        ok:boolean, Mensajes:Mensaje[] }) => 
+      map( (resp: 
+        { ok:boolean, Mensajes:Mensaje[] }) => 
         resp.Mensajes
         
         )
