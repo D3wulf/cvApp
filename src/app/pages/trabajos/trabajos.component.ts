@@ -13,14 +13,19 @@ export class TrabajosComponent implements OnInit {
 
   misTrabajos:Trabajo[]=[
     {
-      nombre:'CodeInc',
+      nombre:'Tundra',
       descripcion:'Aplicación de empresa ficticia con MEAN',
-      url:'https://codein-backend.herokuapp.com/dashboard'
+      url:'https://tundraapp.herokuapp.com/'
     },
     {
       nombre:'MEAN',
-      descripcion:'Api en contrucción con MEAN',
+      descripcion:'Api en construcción con MEAN',
       url:'https://angular-auth-masm.herokuapp.com/auth/login'
+    },
+    {
+      nombre:'Api Goty',
+      descripcion:'Aplicación para votar, con Angular y Firebase',
+      url:'https://angular-goty-568f8.web.app/goty'
     },
     {
       nombre:'Proyecto del curso de Cenec',
@@ -36,11 +41,6 @@ export class TrabajosComponent implements OnInit {
       nombre:'Api de banderas',
       descripcion:'Api de banderas con VueJs',
       url:'https://api-banderas.web.app'
-    },
-    {
-      nombre:'Api Goty',
-      descripcion:'Aplicación para votar, con Angular y Firebase',
-      url:'https://angular-goty-568f8.web.app/goty'
     },
     {
       nombre:'Proyecto Final Módulo',
