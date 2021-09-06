@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { JunioComponent } from './pages/junio/junio.component';
 import { AgostoComponent } from './pages/agosto/agosto.component';
 import { JulioComponent } from './pages/julio/julio.component';
+import { SeptiembreComponent } from './pages/septiembre/septiembre.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,9 @@ const routes: Routes = [
   },
   {
     path:'agosto', component:AgostoComponent
+  },
+  {
+    path:'septiembre', component:SeptiembreComponent
   },
 
   {

@@ -13,6 +13,11 @@ export class TrabajosComponent implements OnInit {
 
   misTrabajos:Trabajo[]=[
     {
+      nombre:'PokemonGame',
+      descripcion:'Juego de adivinar Pokemon con Angular',
+      url:'https://pokemongame-angular.netlify.app/'
+    },
+    {
       nombre:'Tundra',
       descripcion:'Aplicación de empresa ficticia con MEAN',
       url:'https://tundraapp.herokuapp.com/'

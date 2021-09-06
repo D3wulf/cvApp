@@ -10,6 +10,7 @@ import { FlipboxComponent } from './flipbox/flipbox.component';
 import { JunioComponent } from './junio/junio.component';
 import { JulioComponent } from './julio/julio.component';
 import { AgostoComponent } from './agosto/agosto.component';
+import { SeptiembreComponent } from './septiembre/septiembre.component';
 
 
 
@@ -20,7 +21,11 @@ import { AgostoComponent } from './agosto/agosto.component';
     TrabajosComponent, 
     GraficaComponent, 
     TemasComponent, 
-    FlipboxComponent, JunioComponent, JulioComponent, AgostoComponent],
+    FlipboxComponent, 
+    JunioComponent, 
+    JulioComponent, 
+    AgostoComponent, 
+    SeptiembreComponent],
   imports: [
     CommonModule, 
     FormsModule,
@@ -35,7 +40,8 @@ import { AgostoComponent } from './agosto/agosto.component';
     FlipboxComponent,
     JunioComponent,
     JulioComponent,
-    AgostoComponent
+    AgostoComponent,
+    SeptiembreComponent
   ]
 })
 export class PagesModule { }

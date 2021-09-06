@@ -22,17 +22,16 @@ export class GraficaComponent {
 
   //@Input('labels1') labels1:string[]= [];
   @Input('data1') barChartData: ChartDataSets[] = [
-    { data: [3,7,9,8], label: 'Angular', backgroundColor: '#02A9FA' },
-    { data: [4,6,8,4], label: 'NodeJs' , backgroundColor: '#000000' },
-    { data: [0,3,0,0], label: 'ReactJs', backgroundColor: '#df7116' },
-    { data: [0,0,0,3], label: 'VueJs', backgroundColor: '#E8CE5A' },
-    { data: [7,5,5,8], label: 'Otros(HTML,CSS,JavaScipt)', backgroundColor: '#DF1DF6' },
+    { data: [7,9,8,5], label: 'Angular', backgroundColor: '#02A9FA' },
+    { data: [6,8,4,0], label: 'NodeJs' , backgroundColor: '#000000' },
+    { data: [0,0,0,8], label: 'Java', backgroundColor: '#df7116' },
+    { data: [0,0,8,0], label: 'VueJs', backgroundColor: '#E8CE5A' },
+    { data: [5,5,8,3], label: 'Otros(HTML,CSS,JavaScript)', backgroundColor: '#DF1DF6' },
     
     
   ];
-  @Input('labels2') barChartLabels: Label[] = ["Mayo", "Junio", "Julio","Agosto"];
-  
 
+  @Input('labels2') barChartLabels: Label[] = ["Junio", "Julio","Agosto","Septiembre"];
   @Input() tituloInput:string= `Prueba de Output + ng Model`
 
   public barChartOptions: ChartOptions = {
@@ -42,20 +41,14 @@ export class GraficaComponent {
   public barChartType: ChartType = 'bar';
   public barChartLegend = true;
   
-
   // public barChartData: ChartDataSets[] = [];
-
-
   constructor() { }
-  
-  
   // ngOnInit(): void {
 
   //   this.barChartLabels = this.labels1;
   //   this.barChartData = this.data;
     
   // }
-
   
   // public randomize(): void {
   //   // Only Change 3 values
@@ -87,8 +80,6 @@ export class GraficaComponent {
   //         Math.round(Math.random() * 100),
   //         (Math.random() * 100),
   //         Math.round(Math.random() * 100), ];
-
-      
   //}
 
 }
